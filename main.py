@@ -3,6 +3,10 @@ from discord.ext import commands
 import yt_dlp
 import asyncio
 import os
+import discord.opus
+from discord.ext import commands
+
+discord.opus.load_opus('libopus.so.0')
 
 # Ambil token dari environment variable Railway
 TOKEN = os.getenv("DISCORD_TOKEN")
